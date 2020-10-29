@@ -1,6 +1,6 @@
 //Assignment 3 - Syntax Checker [Main.cpp]
-//  Takes in file from command line parsing for delimitors such as {[()]} then checking their balanced
-//  If unbalanced program exits and notifies user with error message with line number.
+//  Takes in file from command line parsing for delimitors such as {[()]} then checking their balance
+//  If unbalanced, program exits and notifies user with error message with line number.
 //  Daniel Naryshev
 #include "GenStack.h"
 #include <iostream>
@@ -63,7 +63,6 @@ int main(int argc, char  **argv) {
               }
             break;
           case ']':
-              // Store the top element in a
               x = s.peek();
               if (x == '['){
                   s.pop();
