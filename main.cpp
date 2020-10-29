@@ -12,8 +12,7 @@ int main(int argc, char  **argv) {
     GenStack<char> s;
     ifstream inFile(argv[1]);
     int lineNumber = 0, errorLine = 0;
-    string delims = "", line = "";
-    string userPath;
+    string line = "", userPath;
     char x;
 
     // Confirm inFile exists, if not exit
@@ -80,7 +79,7 @@ int main(int argc, char  **argv) {
         }
       }
     }
-    // if stack is empty at this point then syntax is error free 
+    // if stack is empty at this point then syntax is error free
     if (s.isEmpty()){
         cout << "All good..."<< endl;
     } else {
